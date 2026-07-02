@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venzo Amphion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Venzo Amphion inicio">
+      <img src="assets/logo-venzo-argentina.png" alt="Venzo Argentina">
+    </a>
+    <nav id="main-nav" aria-label="Principal">
+      <a href="#diseno">Diseño</a>
+      <a href="#tecnologia">Tecnología</a>
+      <a href="#perfiles">Terreno</a>
+      <a href="#colores">Modelos</a>
+      <a href="#modelos">Distribuidores</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <p class="kicker">VENZO AMPHION 29</p>
+        <h1>PARA CADA<br>CAMINO</h1>
+        <p class="tagline">Control y rendimiento absoluto en cada recorrido.</p>
+      </div>
+      <img class="hero-bike" src="assets/hero 1.png" alt="Bicicleta Venzo Amphion">
+      <a class="scroll-cue" href="#diseno" aria-label="Bajar a la siguiente seccion"></a>
+    </section>
+
+    <section class="section split" id="diseno">
+      <div class="split-header">
+        <p class="eyebrow reveal">Ingeniería</p>
+        <h2 class="reveal reveal-delay-1">Lo que marca la diferencia</h2>
+      </div>
+      <div class="feature-carousel-wrapper">
+        <button class="carousel-btn prev" aria-label="Beneficio anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+        </button>
+        <div class="feature-grid">
+          <article class="reveal">
+            <img src="assets/amphion-control.png" alt="Detalle de manubrio y horquilla que transmite precisión y firmeza">
+            <h3>Precisión</h3>
+            <p>Geometría equilibrada para brindar una conducción firme, estable y segura en cada trayecto.</p>
+          </article>
+          <article class="reveal reveal-delay-1">
+            <img src="assets/amphion-versatilidad.png" alt="Detalle de la geometría del cuadro que transmite agilidad de rodado">
+            <h3>Integración</h3>
+            <p>El cableado interno y el diseño limpio del cuadro mejoran la estética y protegen los componentes durante el uso.</p>
+          </article>
+          <article class="reveal reveal-delay-2">
+            <img src="assets/amphion-rendimiento.png" alt="Detalle de la transmisión y cadena que transmite movimiento y desempeño">
+            <h3>Eficiencia</h3>
+            <p>La transmisión optimizada ofrece un pedaleo más fluido y un rendimiento constante con menor esfuerzo.</p>
+          </article>
+        </div>
+        <button class="carousel-btn next" aria-label="Siguiente beneficio">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="tech" id="tecnologia">
+      <div class="tech-header">
+        <p class="eyebrow reveal">Componentes que empujan</p>
+        <h2 class="reveal reveal-delay-1">Explora la Amphion</h2>
+      </div>
+      <div class="tech-container reveal reveal-delay-2">
+        <img src="https://venzoargentina.com.ar/wp-content/uploads/2026/04/IMG1-17.png" class="tech-bike-img" alt="Bicicleta Venzo Amphion interactiva">
+        
+        <!-- Hotspots -->
+        <button class="hotspot" data-target="card-cuadro" style="top: 48%; left: 48%;" aria-label="Ver detalle de Cuadro 6061"></button>
+        <button class="hotspot" data-target="card-horquilla" style="top: 42%; left: 73%;" aria-label="Ver detalle de Horquilla con bloqueo"></button>
+        <button class="hotspot" data-target="card-cambio" style="top: 70%; left: 24%;" aria-label="Ver detalle de Cambio Shimano"></button>
+        <button class="hotspot" data-target="card-cubiertas" style="top: 76%; left: 84%;" aria-label="Ver detalle de Cubiertas Maxxis Rekon Race"></button>
+
+        <!-- Floating Cards -->
+        <div id="card-cuadro" class="tech-card">
+          <button class="tech-card-close" aria-label="Cerrar">&times;</button>
+          <h3>Cuadro 6061</h3>
+          <p>Estructura principal construida en aluminio liviano y resistente.</p>
+          <div class="tech-card-benefit">
+            <strong>Beneficio:</strong>
+            Equilibra peso, rigidez y durabilidad para diversas exigencias del camino.
+          </div>
+        </div>
+
+        <div id="card-horquilla" class="tech-card">
+          <button class="tech-card-close" aria-label="Cerrar">&times;</button>
+          <h3>Horquilla con bloqueo</h3>
+          <p>Suspensión delantera diseñada para absorber irregularidades del terreno.</p>
+          <div class="tech-card-benefit">
+            <strong>Beneficio:</strong>
+            Mayor suavidad y precisión de manejo en senderos y superficies irregulares.
+          </div>
+        </div>
+
+        <div id="card-cambio" class="tech-card">
+          <button class="tech-card-close" aria-label="Cerrar">&times;</button>
+          <h3>Cambio Shimano</h3>
+          <p>Sistema de transmisión de 27 velocidades para responder a las exigencias de cada relieve.</p>
+          <div class="tech-card-benefit">
+            <strong>Beneficio:</strong>
+            Facilita un pedaleo fluido tanto en subidas exigentes como en tramos veloces.
+          </div>
+        </div>
+
+        <div id="card-cubiertas" class="tech-card">
+          <button class="tech-card-close" aria-label="Cerrar">&times;</button>
+          <h3>Cubiertas Maxxis Rekon Race</h3>
+          <p>Cubiertas de perfil competitivo diseñadas para una rodadura veloz en caminos mixtos.</p>
+          <div class="tech-card-benefit">
+            <strong>Beneficio:</strong>
+            Garantizan máxima tracción y estabilidad en curvas y descensos.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profiles" id="perfiles">
+      <div class="profile-showcase">
+        <div class="profile-video-wrapper">
+          <video id="video-senderos" class="profile-video is-active" muted playsinline preload="auto">
+            <source src="assets/bici%20senderos.mp4" type="video/mp4">
+          </video>
+          <video id="video-ciudad" class="profile-video" muted playsinline preload="auto">
+            <source src="assets/bici%20ciudad.mp4" type="video/mp4">
+          </video>
+          <video id="video-energia" class="profile-video" muted playsinline preload="auto">
+            <source src="assets/bici%20energia.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="profile-info-panel reveal">
+          <div class="profile-info-content is-active" id="info-senderos">
+            <h3>Senderos y aventura</h3>
+            <p>Para quienes buscan explorar caminos de tierra, senderos rurales y entornos naturales con absoluta firmeza.</p>
+          </div>
+          <div class="profile-info-content" id="info-ciudad">
+            <h3>Ciudad y movilidad</h3>
+            <p>Una solución ágil para desplazamientos urbanos, traslados diarios y paseos donde se prioriza el confort.</p>
+          </div>
+          <div class="profile-info-content" id="info-energia">
+            <h3>Entrenamiento y desempeño</h3>
+            <p>Concebida para deportistas que buscan optimizar su capacidad física y sostener un ritmo exigente.</p>
+          </div>
+          
+          <div class="profile-indicators">
+            <span class="profile-dot is-active" aria-label="Escena 1"></span>
+            <span class="profile-dot" aria-label="Escena 2"></span>
+            <span class="profile-dot" aria-label="Escena 3"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="colors" id="colores">
+      <div class="color-customizer" data-active-color="red">
+        <div class="color-left-panel">
+          <p class="eyebrow reveal" id="color-kicker">Personalización</p>
+          <h2 class="color-title reveal reveal-delay-1">ELEGÍ TU COLOR</h2>
+          <p class="color-subtitle reveal reveal-delay-2">La Amphion está disponible en distintas combinaciones de color para adaptarse a diferentes estilos.</p>
+          
+          <div class="color-details reveal reveal-delay-3">
+            <div class="active-color-label">
+              <h3 id="active-color-name">Rojo</h3>
+              <span class="active-color-line"></span>
+            </div>
+            
+            <div class="color-selector">
+              <button class="color-opt is-active" data-color="red" data-name="Rojo" aria-label="Seleccionar Rojo">
+                <span class="swatch-btn"></span>
+              </button>
+              <button class="color-opt" data-color="pink" data-name="Rosa" aria-label="Seleccionar Rosa">
+                <span class="swatch-btn"></span>
+              </button>
+              <button class="color-opt" data-color="grey" data-name="Gris" aria-label="Seleccionar Gris">
+                <span class="swatch-btn"></span>
+              </button>
+              <button class="color-opt" data-color="green" data-name="Verde" aria-label="Seleccionar Verde">
+                <span class="swatch-btn"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="color-right-panel">
+          <div class="color-viewer reveal">
+            <div class="color-bikes" id="color-bikes">
+              <img id="color-bike-red" class="color-bike-img is-active" src="assets/bici 4.png" alt="Bicicleta Venzo Amphion Rojo">
+              <img id="color-bike-pink" class="color-bike-img" src="assets/bici 2.png" alt="Bicicleta Venzo Amphion Rosa">
+              <img id="color-bike-grey" class="color-bike-img" src="assets/bici 3.png" alt="Bicicleta Venzo Amphion Gris">
+              <img id="color-bike-green" class="color-bike-img" src="assets/bici 1.png" alt="Bicicleta Venzo Amphion Verde">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="terrain" id="terreno">
+      <p class="eyebrow reveal">Experiencia</p>
+      <h2 class="reveal reveal-delay-1">Una MTB que crece con vos</h2>
+      <p class="reveal reveal-delay-2">Con una base sólida y componentes confiables, está preparada para acompañar tu crecimiento durante mucho tiempo.</p>
+    </section>
+
+    <section class="models" id="modelos">
+      <div class="model-card">
+        <img src="https://venzoargentina.com.ar/wp-content/uploads/2026/04/IMG8-4.png" alt="Venzo Amphion modelo" class="reveal">
+        <div class="reveal reveal-delay-1">
+          <p class="eyebrow">Precio sugerido</p>
+          <h2>$690.000</h2>
+          <p>Precio minimo sugerido al publico en tiendas oficiales.</p>
+          <a href="https://venzoargentina.com.ar/distribuidores/" target="_blank" rel="noopener noreferrer" class="cta">Contactar distribuidor</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>VENZO AMPHION</span>
+    <div class="footer-links">
+      <a href="https://venzoargentina.com.ar/product/amphion/">Producto oficial</a>
+      <a class="social-link" href="https://www.instagram.com/venzoarg/" aria-label="Instagram de Venzo Argentina">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.4" cy="6.6" r="1.1"></circle>
+        </svg>
+        <span>Instagram</span>
+      </a>
+      <a class="social-link" href="https://www.youtube.com/@VenzoArg" aria-label="YouTube de Venzo Argentina">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 12s0-3.4-.44-5.02a3.08 3.08 0 0 0-2.16-2.16C17.78 4.38 12 4.38 12 4.38s-5.78 0-7.4.44a3.08 3.08 0 0 0-2.16 2.16C2 8.6 2 12 2 12s0 3.4.44 5.02a3.08 3.08 0 0 0 2.16 2.16c1.62.44 7.4.44 7.4.44s5.78 0 7.4-.44a3.08 3.08 0 0 0 2.16-2.16C22 15.4 22 12 22 12Z"></path>
+          <path class="play" d="M10 15.2V8.8l5.7 3.2L10 15.2Z"></path>
+        </svg>
+        <span>YouTube</span>
+      </a>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hotspots = document.querySelectorAll('.hotspot');
+      const cards = document.querySelectorAll('.tech-card');
+      const closeButtons = document.querySelectorAll('.tech-card-close');
+
+      function deactivateAll() {
+        hotspots.forEach(h => h.classList.remove('is-active'));
+        cards.forEach(c => c.classList.remove('is-active'));
+      }
+
+      hotspots.forEach(hotspot => {
+        hotspot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const targetId = hotspot.getAttribute('data-target');
+          const targetCard = document.getElementById(targetId);
+
+          const isActive = hotspot.classList.contains('is-active');
+
+          deactivateAll();
+
+          if (!isActive) {
+            hotspot.classList.add('is-active');
+            targetCard.classList.add('is-active');
+          }
+        });
+      });
+
+      closeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          deactivateAll();
+        });
+      });
+
+      document.addEventListener('click', () => {
+        deactivateAll();
+      });
+
+      cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+      });
+
+      // Sequencer para el showcase de perfiles
+      const showcaseVideos = document.querySelectorAll('.profile-video');
+      const showcaseTexts = document.querySelectorAll('.profile-info-content');
+      const showcaseDots = document.querySelectorAll('.profile-dot');
+      let currentShowcaseIndex = 0;
+      let isTransitioning = false;
+
+      function switchShowcaseScene(nextIndex) {
+        if (isTransitioning) return;
+        isTransitioning = true;
+
+        const currentVideo = showcaseVideos[currentShowcaseIndex];
+        const nextVideo = showcaseVideos[nextIndex];
+
+        // 1. Iniciar la reproducción del siguiente video
+        nextVideo.currentTime = 0;
+        nextVideo.play().then(() => {
+          // 2. Intercambiar clases activas
+          showcaseVideos.forEach((v, idx) => {
+            if (idx === nextIndex) {
+              v.classList.add('is-active');
+            } else {
+              v.classList.remove('is-active');
+            }
+          });
+
+          showcaseTexts.forEach((t, idx) => {
+            if (idx === nextIndex) {
+              t.classList.add('is-active');
+            } else {
+              t.classList.remove('is-active');
+            }
+          });
+
+          showcaseDots.forEach((d, idx) => {
+            if (idx === nextIndex) {
+              d.classList.add('is-active');
+            } else {
+              d.classList.remove('is-active');
+            }
+          });
+
+          // 3. Pausar el video anterior después de que termine la transición de opacidad (800ms)
+          const prevIndex = currentShowcaseIndex;
+          setTimeout(() => {
+            if (prevIndex !== nextIndex) {
+              showcaseVideos[prevIndex].pause();
+            }
+            isTransitioning = false;
+          }, 800);
+
+          currentShowcaseIndex = nextIndex;
+        }).catch(err => {
+          console.warn("Error intentando reproducir el siguiente video:", err);
+          isTransitioning = false;
+          // Fallback en caso de bloqueo del navegador: cambiar clases sin reproducir de inmediato
+          showcaseVideos.forEach((v, idx) => {
+            v.classList.toggle('is-active', idx === nextIndex);
+          });
+          showcaseTexts.forEach((t, idx) => {
+            t.classList.toggle('is-active', idx === nextIndex);
+          });
+          showcaseDots.forEach((d, idx) => {
+            d.classList.toggle('is-active', idx === nextIndex);
+          });
+          currentShowcaseIndex = nextIndex;
+        });
+      }
+
+      // Escuchar el final de cada video para pasar al siguiente
+      showcaseVideos.forEach((video, index) => {
+        video.addEventListener('ended', () => {
+          const nextIndex = (index + 1) % showcaseVideos.length;
+          switchShowcaseScene(nextIndex);
+        });
+      });
+
+      // Escuchar clics en los indicadores para navegación manual
+      showcaseDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          if (index !== currentShowcaseIndex) {
+            switchShowcaseScene(index);
+          }
+        });
+      });
+
+      // Asegurar la reproducción del primer video
+      if (showcaseVideos.length > 0) {
+        showcaseVideos[0].play().catch(err => {
+          console.log("Autoplay inicial bloqueado por el navegador:", err);
+          // Si el navegador bloquea la reproducción automática silenciosa,
+          // agregamos un listener de primer clic en el body para iniciarla
+          const playOnInteraction = () => {
+            showcaseVideos[0].play().catch(() => {});
+            document.removeEventListener('click', playOnInteraction);
+            document.removeEventListener('touchstart', playOnInteraction);
+          };
+          document.addEventListener('click', playOnInteraction);
+          document.addEventListener('touchstart', playOnInteraction);
+        });
+      }
+
+      // Menú hamburguesa – Mobile
+      const navToggle = document.getElementById('nav-toggle');
+      const mainNav = document.getElementById('main-nav');
+
+      if (navToggle && mainNav) {
+        const openMenu = () => {
+          mainNav.classList.add('is-open');
+          navToggle.setAttribute('aria-expanded', 'true');
+          navToggle.setAttribute('aria-label', 'Cerrar menú');
+        };
+
+        const closeMenu = () => {
+          mainNav.classList.remove('is-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          navToggle.setAttribute('aria-label', 'Abrir menú');
+        };
+
+        navToggle.addEventListener('click', () => {
+          const isOpen = mainNav.classList.contains('is-open');
+          if (isOpen) { closeMenu(); } else { openMenu(); }
+        });
+
+        // Cerrar al hacer clic en un enlace del menú
+        mainNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', closeMenu);
+        });
+
+        // Cerrar al hacer clic fuera del header
+        document.addEventListener('click', (e) => {
+          if (!e.target.closest('.site-header')) {
+            closeMenu();
+          }
+        });
+
+        // Cerrar al redimensionar a desktop
+        window.addEventListener('resize', () => {
+          if (window.innerWidth >= 768) { closeMenu(); }
+        });
+      }
+
+      // Selector de colores interactivo (Personalizador)
+      const colorOpts = document.querySelectorAll('.color-opt');
+      const colorImages = document.querySelectorAll('.color-bike-img');
+      const activeColorName = document.getElementById('active-color-name');
+      const colorCustomizer = document.querySelector('.color-customizer');
+      const colorBikes = document.getElementById('color-bikes');
+      const colorHalo = document.getElementById('color-halo');
+
+      if (colorOpts && colorImages && activeColorName) {
+        colorOpts.forEach(opt => {
+          opt.addEventListener('click', (e) => {
+            e.preventDefault();
+            const selectedColor = opt.getAttribute('data-color');
+            const selectedName = opt.getAttribute('data-name');
+
+            // 1. Actualizar clase activa del botón
+            colorOpts.forEach(o => o.classList.toggle('is-active', o === opt));
+
+            // 2. Actualizar clase activa de la imagen de la bicicleta (Crossfade)
+            colorImages.forEach(img => {
+              const isTarget = img.id === `color-bike-${selectedColor}`;
+              img.classList.toggle('is-active', isTarget);
+            });
+
+            // 3. Actualizar el título dinámico
+            activeColorName.textContent = selectedName;
+
+            // 4. Actualizar el atributo de color activo en el customizer (actualiza el color del halo)
+            if (colorCustomizer) {
+              colorCustomizer.setAttribute('data-active-color', selectedColor);
+            }
+          });
+        });
+      }
+
+      // Carousel de beneficios mobile
+      const featureGrid = document.querySelector('.feature-grid');
+      const featurePrevBtn = document.querySelector('.feature-carousel-wrapper .carousel-btn.prev');
+      const featureNextBtn = document.querySelector('.feature-carousel-wrapper .carousel-btn.next');
+
+      if (featureGrid && featurePrevBtn && featureNextBtn) {
+        featurePrevBtn.addEventListener('click', () => {
+          const cardWidth = featureGrid.querySelector('article').offsetWidth;
+          featureGrid.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+
+        featureNextBtn.addEventListener('click', () => {
+          const cardWidth = featureGrid.querySelector('article').offsetWidth;
+          featureGrid.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+
+        const updateFeatureArrows = () => {
+          const scrollLeft = featureGrid.scrollLeft;
+          const maxScroll = featureGrid.scrollWidth - featureGrid.clientWidth;
+          
+          featurePrevBtn.style.opacity = scrollLeft <= 10 ? '0.25' : '1';
+          featurePrevBtn.style.pointerEvents = scrollLeft <= 10 ? 'none' : 'auto';
+          
+          featureNextBtn.style.opacity = scrollLeft >= maxScroll - 10 ? '0.25' : '1';
+          featureNextBtn.style.pointerEvents = scrollLeft >= maxScroll - 10 ? 'none' : 'auto';
+        };
+
+        featureGrid.addEventListener('scroll', updateFeatureArrows);
+        updateFeatureArrows();
+        setTimeout(updateFeatureArrows, 300);
+        
+        window.addEventListener('resize', updateFeatureArrows);
+      }
+
+      // ==========================================
+      // SCROLL REVEAL (PREMIUM)
+      // ==========================================
+      const revealOptions = {
+        root: null,
+        rootMargin: '0px 0px -5% 0px', // Revela cuando el elemento entra 5% en la pantalla
+        threshold: 0.1
+      };
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+          } else {
+            entry.target.classList.remove('is-revealed');
+          }
+        });
+      }, revealOptions);
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+      });
+    });
+  </script>
+</body>
+</html>
